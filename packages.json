@@ -1,0 +1,31 @@
+{
+	"name": "mailtrain-wordpress-gutenberg-block",
+	"version": "0.1",
+	"private": false,
+	"description": "Mailtrain WordPress Gutenberg Block ",
+	"author": "PW",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"Mailtrain",
+		"WordPress",
+		"Newsletter",
+		"Subscription",
+		"block"
+	],
+	"homepage": "https://github.com/p-w/mailtrain-wordpress-gutenberg-block",
+	"repository": "git+https://github.com/p-w/mailtrain-wordpress-gutenberg-block.git",
+	"bugs": {
+		"url": "https://github.com/p-w/mailtrain-wordpress-gutenberg-block/issues"
+	},
+	"main": "build/index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^9.0.0"
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"format:js": "wp-scripts format-js",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start"
+	}
+}

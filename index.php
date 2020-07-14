@@ -12,6 +12,7 @@
  * @package mailtrain-wordpress-gutenberg-block
  */
 
+
 /**
  * Exit if accessed directly.
 */
@@ -34,6 +35,8 @@ function mailtrain_wordpress_gutenberg_block_load_textdomain() {
  *
  * Passes translations to JavaScript.
  */
+add_action( 'init', 'mailtrain_wordpress_gutenberg_block_register_block' );
+
 function mailtrain_wordpress_gutenberg_block_register_block() {
 	if ( ! function_exists( 'register_block_type' ) ) {
 		// Gutenberg is not active.
@@ -55,4 +58,3 @@ function mailtrain_wordpress_gutenberg_block_register_block() {
 		wp_set_script_translations( 'mailtrain-wordpress-gutenberg-block', 'mailtrain-wordpress-gutenberg-block' );
 	}
 }
-add_action( 'init', 'mailtrain_wordpress_gutenberg_block_register_block' );
